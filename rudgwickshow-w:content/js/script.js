@@ -8,12 +8,13 @@ let details7='This country show has something for everyone to enjoy, the sights 
 let details8 ='Ride on the old time traditional fair, Visit our 6,000 square feet quality Craft Marquee and new Food Hall with homemade cakes and lots more. We have people that come in fancy dress let alone all our stalls; we have various food stalls, clothing stalls and little goodie stalls';
 
 let photo = document.createElement("img");
-document.querySelector('#details').appendChild(photo);
+document.querySelector('#event-image').appendChild(photo);
 
 const event1Details = () => {   
 photo.setAttribute("src","img/event-steam-thumb.jpg");
 document.querySelector('.event-text').innerHTML = '<h3>Steam Show</h3>' + '<br>';
 document.querySelector('.event-text').innerHTML += details1;
+document.querySelector('#details').style.display="flex";
 }
 
 document.querySelector("#event-img-1").addEventListener("click", event1Details);
