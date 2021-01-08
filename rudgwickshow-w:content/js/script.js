@@ -6,53 +6,63 @@ let details5='You can sit down and take a break in our 140ft beer marquee with m
 let details6='In case you plan on attending several days and need camping, we shall be pleased to assist you.Just fill in the form below and send it to us, then we shall be more than happy to reserve you space for camping.';
 let details7='This country show has something for everyone to enjoy, the sights and sounds of the beautifully restored vehicles and exhibits of the past pondering around the site. We also have various displays of cute animals and sometimes if you’re lucky a stray owl will fly over your heads.';
 let details8 ='Ride on the old time traditional fair, Visit our 6,000 square feet quality Craft Marquee and new Food Hall with homemade cakes and lots more. We have people that come in fancy dress let alone all our stalls; we have various food stalls, clothing stalls and little goodie stalls';
-const event1Details = () => {
-    document.querySelector('.event-text').innerHTML = '<h3>Steam Show</h3>' + '<br>';
-    document.querySelector('.event-text').innerHTML += details1;
-    // document.querySelector('.event-image').innerHTML += 'src="img/event-steam-thumb.jpg"' ;
-// Nate, I could not add image here
 
+let photo = document.createElement("img");
+document.querySelector('#details').appendChild(photo);
+
+const event1Details = () => {   
+photo.setAttribute("src","img/event-steam-thumb.jpg");
+document.querySelector('.event-text').innerHTML = '<h3>Steam Show</h3>' + '<br>';
+document.querySelector('.event-text').innerHTML += details1;
 }
+
 document.querySelector("#event-img-1").addEventListener("click", event1Details);
 
 const event2Details = () => {
+    photo.setAttribute("src","img/event-farm-animal-thumb.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Farm Animals</h3>' + '<br>';
-    document.querySelector('.event-text').innerHTML = details2;
+    document.querySelector('.event-text').innerHTML += details2;
 }
 document.querySelector("#event-img-2").addEventListener("click", event2Details);
 
 const event3Details = () => {
+    photo.setAttribute("src","img/event-children-activity-thumb.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Armed Combat</h3>' + '<br>';
-    document.querySelector('.event-text').innerHTML = details3;
+    document.querySelector('.event-text').innerHTML += details3;
 }
 document.querySelector("#event-img-3").addEventListener("click", event3Details);
 
 const event4Details = () => {
+    photo.setAttribute("src","img/event-beer-festival-thumb.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Beer Festival</h3>' + '<br>';
-    document.querySelector('.event-text').innerHTML = details4;
+    document.querySelector('.event-text').innerHTML += details4;
 }
 document.querySelector("#event-img-4").addEventListener("click", event4Details);
 
 const event5Details = () => {
+    photo.setAttribute("src","img/event-music-festival-thumb.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Agricultural Music</h3>' + '<br>';
-    document.querySelector('.event-text').innerHTML = details5;
+    document.querySelector('.event-text').innerHTML += details5;
 }
 document.querySelector("#event-img-5").addEventListener("click", event5Details);
 
 const event6Details = () => {
+    photo.setAttribute("src","img/event-camping-thumb.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Public Camping</h3>' + '<br>';
-    document.querySelector('.event-text').innerHTML = details6;
+    document.querySelector('.event-text').innerHTML += details6;
 }
 document.querySelector("#event-img-6").addEventListener("click", event6Details);
 
 const event7Details = () => {
+    photo.setAttribute("src","img/event-dog-show-thumb.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Best Friends</h3>' + '<br>';
-    document.querySelector('.event-text').innerHTML = details7;
+    document.querySelector('.event-text').innerHTML += details7;
 }
 document.querySelector("#event-img-7").addEventListener("click", event7Details);
 
 const event8Details = () => {
+    photo.setAttribute("src","img/event-farmer-market-thumb.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Farmer Market</h3>' + '<br>';
-    document.querySelector('.event-text').innerHTML = details8;
+    document.querySelector('.event-text').innerHTML += details8;
 }
 document.querySelector("#event-img-8").addEventListener("click", event8Details);
