@@ -72,35 +72,6 @@ a:active {color: coral;}
    position: relative;
 }
 
-.jumbo-con {padding-top: 1rem;}
-
-.jumbo-con h2 {
-   text-align: center;
-   font-size: calc(2.7em + 1vw); 
-   font-family: 'Raleway', sans-serif;
-   text-align: center;
-   text-shadow: 1px 1px 3px #222;
-   color: #f5f5f5;
-}
-.jumbotron p {
-   font-family: 'Red Rose', 'cursive';
-   text-align: center;
-   font-size: calc(1em + 1vw);
-   margin: 0!important;
-   color: yellow;
-}
-.jumbotron {
-   text-shadow: 1px 1px 3px #222;
-   box-shadow: 1px 6px 8px #222;
-   background-color: green;
-   border-top: yellow 3px solid;
-   border-bottom: yellow 3px solid;
-   border-radius: 0;
-   background-size: cover;
-   padding: .25rem;
-   margin: 1rem 0;
-}
-
 .col-lg-8 {margin-top: 1rem;}
 .col-lg-8 h2, h3 {
    padding: .85rem 0 .25rem .85rem;
