@@ -1,5 +1,4 @@
 /* my custom styling mobile first: */
-html {background-image: url(../img/rice.png)}
 body {background-image: url(../img/rice.png)}
 
 p {padding: 1rem; line-height: 1.4;}
@@ -14,17 +13,27 @@ footer {
 }
 .h4, h4 {font-size: 1rem; text-align: center;}
 /*-----------------------------------------------------------------*/
-a:link {
-   color: orange; padding: 1rem;
-   font-family: 'Red Rose', 'cursive';
-}
+a:link {color: orange; padding:.2em;}
+
 a:visited {color: darkgoldenrod;}
 
-a:hover {color: yellow}
+a:hover {color: darkgoldenrod; text-decoration: none;}
 
 a:active {color: coral;}
 
+.bun {
+   font-family: 'Red Rose', 'cursive';
+   font-size: calc(.35em + 1vw); 
+   padding: 8px; margin-bottom: .8em;
+   background-color: #ffa500; width:33%;
+   margin-left:33%; margin-right:33%;
+   color: #fff; border: solid 3px rgb(216, 147, 20);
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, .4);
+}
+.bun:hover {color: #fff; background-color: rgb(233, 151, 0);}
+
 .navbar-dark .navbar-nav .nav-link{
+   font-family: 'Red Rose', 'cursive';
    font-size: calc(.8em + 1vw);
    padding: calc(.25rem + 1vw);
    text-decoration: none;
@@ -46,7 +55,7 @@ a:active {color: coral;}
 }
 .navbar-collapse {
    background-color:#197b30;
-   padding: 20px 70px 0 70px; margin-top: -72px;
+   padding: 20px 70px 0 70px; margin-top: -20px;
    text-align: center;
 }
 
@@ -55,7 +64,7 @@ a:active {color: coral;}
 .headlogo {
    width: 210px; z-index: 1;
    position: relative;
-   top: 21px; left: -20px;
+   top: 32px; left: -20px;
 }
 .bg-dark {
    background-image: url(../img/wood-banner.jpg)!important; 
@@ -79,7 +88,7 @@ section {margin-bottom: 1rem; background-color: #f5f5f5;}
 }
 .col-lg-4 h3 {padding: .85rem 0 .25rem .85rem;}
 
-.col-lg-4 h4 {padding: 1rem; border-bottom: orange solid 1px; margin: .4em;}
+.col-lg-4 h4 {padding: 1rem; border-bottom: orange solid 1px; margin: 0 2em;}
 
 .img-half {width: 100%; padding: .5em; background-color: #f5f5f5!important;}
 
@@ -88,6 +97,7 @@ section {margin-bottom: 1rem; background-color: #f5f5f5;}
 p {padding: .5em; margin: 15px; font-size: calc(.5em + 1vw);}
 /*-----------------------------------------------------*/
 #js-swap {background-color:#f5f5f5; margin: 0; text-align: center;}
+
 #details img {padding: 1.25em; width:100%;}
 /*-----------------------------------------------------*/
 @media screen and (min-width: 483px) {
