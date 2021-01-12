@@ -11,7 +11,7 @@ let photo = document.createElement("img");
 document.querySelector('#event-image').appendChild(photo);
 
 const event1Details = () => {   
-photo.setAttribute("src","img/event-steam-thumb.jpg");
+photo.setAttribute("src","img/event-steam-large.jpg");
 document.querySelector('.event-text').innerHTML = '<h3>Steam Show</h3>' + '<br>';
 document.querySelector('.event-text').innerHTML += details1;
 document.querySelector('#details').style.display="flex";
@@ -20,49 +20,49 @@ document.querySelector('#details').style.display="flex";
 document.querySelector("#event-img-1").addEventListener("click", event1Details);
 
 const event2Details = () => {
-    photo.setAttribute("src","img/event-farm-animal-thumb.jpg");
+    photo.setAttribute("src","img/event-farm-animal-large.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Farm Animals</h3>' + '<br>';
     document.querySelector('.event-text').innerHTML += details2;
 }
 document.querySelector("#event-img-2").addEventListener("click", event2Details);
 
 const event3Details = () => {
-    photo.setAttribute("src","img/event-children-activity-thumb.jpg");
+    photo.setAttribute("src","img/event-children-activity-large.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Armed Combat</h3>' + '<br>';
     document.querySelector('.event-text').innerHTML += details3;
 }
 document.querySelector("#event-img-3").addEventListener("click", event3Details);
 
 const event4Details = () => {
-    photo.setAttribute("src","img/event-beer-festival-thumb.jpg");
+    photo.setAttribute("src","img/event-beer-festival-large.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Beer Festival</h3>' + '<br>';
     document.querySelector('.event-text').innerHTML += details4;
 }
 document.querySelector("#event-img-4").addEventListener("click", event4Details);
 
 const event5Details = () => {
-    photo.setAttribute("src","img/event-music-festival-thumb.jpg");
+    photo.setAttribute("src","img/event-music-festival-large.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Agricultural Music</h3>' + '<br>';
     document.querySelector('.event-text').innerHTML += details5;
 }
 document.querySelector("#event-img-5").addEventListener("click", event5Details);
 
 const event6Details = () => {
-    photo.setAttribute("src","img/event-camping-thumb.jpg");
+    photo.setAttribute("src","img/event-camping-large.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Public Camping</h3>' + '<br>';
     document.querySelector('.event-text').innerHTML += details6;
 }
 document.querySelector("#event-img-6").addEventListener("click", event6Details);
 
 const event7Details = () => {
-    photo.setAttribute("src","img/event-dog-show-thumb.jpg");
+    photo.setAttribute("src","img/event-dog-show-large.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Best Friends</h3>' + '<br>';
     document.querySelector('.event-text').innerHTML += details7;
 }
 document.querySelector("#event-img-7").addEventListener("click", event7Details);
 
 const event8Details = () => {
-    photo.setAttribute("src","img/event-farmer-market-thumb.jpg");
+    photo.setAttribute("src","img/event-farmer-market-large.jpg");
     document.querySelector('.event-text').innerHTML = '<h3>Farmer Market</h3>' + '<br>';
     document.querySelector('.event-text').innerHTML += details8;
 }
