@@ -126,7 +126,7 @@ a:active {color: coral;}
    font-family: 'Raleway', 'sans-serif';
    color: #f5f5f5;
 }
-section {margin-bottom: 1rem; background-color: #f5f5f5;}
+section {margin-bottom: 1rem background-color: #f5f5f5;}
 .col-lg-4 {
    background-color:#f5f5f5; 
    padding: 0;
@@ -149,5 +149,5 @@ section {margin-bottom: 1rem; background-color: #f5f5f5;}
    }
    .navbar-dark .navbar-nav .nav-link{
       font-size: calc(.8em + 1vw);
-}
+   }
 }
