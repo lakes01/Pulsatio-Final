@@ -1,0 +1,154 @@
+/* my custom styling mobile first: */
+body {background-image: url(../img/rice.png)}
+
+p {padding: 1rem; line-height: 1.4;}
+
+footer {
+   background-color: green; color: yellow;
+   font-family: 'Raleway','sans-serif';
+   border-top: 2px yellow solid;
+   border-bottom: 2px yellow solid;
+   margin-bottom: 1rem;
+   box-shadow: 1px 6px 8px #222;
+}
+.h4, h4 {font-size: 1rem; text-align: center;}
+
+.jumbotron {
+   /* background:  rgba(0, 128, 0, 0.514) url(../img/ricepaper1.png); */
+   background:  rgb(66, 47, 5) url(../img/ricepaper1.png);
+   background-repeat: none;
+   border-bottom: orange 2px solid;
+   font-family: 'Raleway', 'sans-serif';
+   /* color: #f5f5f5; */
+   color: rgb(255, 255, 0);
+   padding: .75rem 2rem;
+
+}
+/*-----------------------------------------------------------------*/
+a:link {color: orange; padding:.2em;}
+
+a:visited {color: darkgoldenrod;}
+
+a:hover {color: darkgoldenrod; text-decoration: none;}
+
+a:active {color: coral;}
+
+.bun {
+   font-family: 'Red Rose', 'cursive';
+   font-size: calc(.35em + 1vw); 
+   padding: 15px; margin-bottom: .8em;
+   background-color: #ffa500; width:30%;
+   margin-left: 35%; margin-right: 35%;
+   color: #fff; border: solid 3px rgb(216, 147, 20);
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, .4);
+}
+.bun:hover {color: #fff; background-color: rgb(233, 151, 0);}
+
+.navbar-dark .navbar-nav .nav-link{
+   font-family: 'Red Rose', 'cursive';
+   font-size: calc(.8em + 1vw);
+   padding: calc(.25rem + 1vw);
+   text-decoration: none;
+   color: yellow;
+   margin: 0 5px 0 0;
+   position: relative;
+}
+.navbar-dark .navbar-nav .nav-link:before {
+   position: absolute; top: 75%; left: 0;
+   width: 100%; height: 1px; align-content: center;
+   background-color: yellow;
+   content: ''; opacity: 0;
+   transform: translateY(1px);
+   transition-property: opacity;
+   transition-duration: .2s;
+}
+ .navbar-dark .navbar-nav .nav-link:hover:before {
+   transform: translateY(0); opacity: 1;
+}
+.navbar-collapse {
+   background-color:#197b30;
+   padding: 20px 70px 0 70px; margin-top: -20px;
+   text-align: center;
+}
+
+/*-----------------------------------------------------------------*/
+.navbar {box-shadow: 0px 3px 5px rgba(0, 0, 0, .4);}
+.headlogo {
+   width: 210px; z-index: 1;
+   position: relative;
+   top: 32px; left: -20px;
+}
+.bg-dark {
+   background-image: url(../img/wood-banner.jpg)!important; 
+   background-color: transparent;
+   top: -40px; height: 165px; width: 100%;
+   z-index: 1; position: relative;
+}
+.col-lg-8 h2, h3 {
+   padding: .85rem 0 .25rem .85rem;
+   background-image: url(../img/ricepaper.png);
+   background-repeat: none;
+   border-bottom: orange 2px solid;
+   font-family: 'Raleway', 'sans-serif';
+   color: #f5f5f5;
+}
+section {margin-bottom: 1rem; background-color: #f5f5f5;}
+
+.col-lg-4 {
+   background-color:#f5f5f5; 
+   padding: 0; margin-bottom: 1rem;
+}
+.col-lg-4 h3 {padding: .85rem 0 .25rem .85rem;}
+
+.col-lg-4 h4 {padding: 1rem; border-bottom: orange solid 1px; margin: 0 2em;}
+
+.img-half {width: 100%; padding: .5em; background-color: #f5f5f5!important;}
+
+.col-lg-3 {margin-top: .5em; text-align: right;}
+
+p {padding: .5em; margin: 15px; font-size: calc(.5em + 1vw);}
+
+.col-lg-4 {
+   -ms-flex-order:13;order:13
+}
+.row-img {margin-left: 0; margin-right: 0;}
+
+.col-lg-12, ::after, ::before {box-sizing: content-box;}
+
+figure img {cursor: pointer;}
+/*-----------------------------------------------------*/
+#js-swap {background-color:#f5f5f5; margin: 0; text-align: center;}
+
+#details img {padding: 1.25em; width:50%;}
+/*-----------------------------------------------------*/
+@media screen and (min-width: 483px) {
+   .navbar-dark .navbar-nav .nav-link{
+      font-size: calc(.5em + 1vw);
+   }
+}
+@media screen and (min-width: 768px) {
+   .navbar-collapse {
+      background-color:rgba(0, 0, 0, 0);
+      padding: 10px; margin-top: 109px;
+   }
+   .headlogo {
+      width: 210px;
+      z-index: 1;
+      position: relative;
+      top: 39px;
+      left: -10px;
+  }
+   footer {
+      background-color: none; padding-left: 4rem;
+   }
+   .navbar-dark .navbar-nav .nav-link{
+      font-size: calc(.5em + 1vw);
+   }
+}
+@media screen and (min-width: 992px) {
+   .col-lg-4 { -ms-flex-order:0;order:0}
+   .col-lg-4 { height: 605px;}
+   .row { margin-right: 0;}
+   .row-img {margin-left: 0;}
+   /* .col-lg-12 {margin-left: -15px;} */
+}
